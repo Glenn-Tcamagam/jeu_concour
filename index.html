@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu de noël</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.jpg" rel="icon" />
+    <link href="assets/img/logo.jpg" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo">
+          <a href="index.html"
+            ><img src="assets/img/LOGO NOEL sans backgound.png" alt=""
+          /></a>
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="lots.html">Lots à gagner</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="reglement.html">Règlement</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <br />
+    <br /><br />
+    <div class="section-title" data-aos="fade-up">
+      <h2>BIENVENUE AU JEU CONCOUR DE VOTRE BOUTIQUE LA DIFFÉRENCE.</h2>
+    </div>
+    <!--DEBUT CAROUSEL -->
+    <div
+      data-aos="fade-up"
+      id="carouselExampleSlidesOnly"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            id="idcarousel"
+            src="assets/img/Reponse quiz1 (1).png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            id="idcarousel"
+            src="assets/img/Reponse quiz1 (2).png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+    <!--FIN CAROUSEL -->
+    <br /><br />
+    <!-- DEBUT FORMULAIRE -->
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span>Inscription</span>
+        <h2>Inscription</h2>
+        <p>Veillez entrer vos informations avant de commencer</p>
+      </div>
+
+      <form
+        id="inscriptionForm"
+        action="insert.php"
+        method="GET"
+        data-aos="fade-up"
+      >
+        <div class="mb-3">
+          <label for="inputNom" class="form-label">Nom</label>
+          <input
+            type="text"
+            name="nom"
+            class="form-control"
+            id="inputNom"
+            required
+          />
+          <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+        </div>
+        <div class="mb-3">
+          <label for="inputPrenom" class="form-label">Prénom</label>
+          <input
+            type="text"
+            name="prenom"
+            class="form-control"
+            id="inputPrenom"
+            required
+          />
+          <div class="invalid-feedback">Veuillez entrer votre prénom.</div>
+        </div>
+        <div class="mb-3">
+          <label for="inputTelephone" class="form-label"
+            >Numéro de téléphone</label
+          >
+          <input
+            type="number"
+            name="telephone"
+            class="form-control"
+            id="inputTelephone"
+            required
+          />
+          <div class="invalid-feedback">
+            Veuillez entrer votre numéro de téléphone.
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button type="submit" class="btn btn-danger" id="submitBtn" disabled>
+            Commencer
+          </button>
+        </div>
+      </form>
+
+      <!-- <form data-aos="fade-up">
+        <div class="mb-3">
+          <label for="nom" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="nom" />
+        </div>
+        <div class="mb-3">
+          <label for="prenom" class="form-label">Prénom</label>
+          <input type="text" class="form-control" id="prenom" />
+        </div>
+
+        <div class="mb-3">
+          <label for="telephone" class="form-label">Téléphone</label>
+          <input type="number" class="form-control" id="telephone" />
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-danger">Commencer</button>
+        </div>
+      </form> -->
+    </div>
+
+    <!--FIN FORMULAIRE -->
+
+    <!-- FIN FORMULAIRE -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <div id="preloader"></div>
+    <!-- JAVASCRIPT -->
+    <script>
+      document
+        .getElementById("inscriptionForm")
+        .addEventListener("input", function () {
+          // Vérifier si tous les champs sont valides
+          if (this.checkValidity()) {
+            document.getElementById("submitBtn").disabled = false; // Déverrouiller le bouton
+          } else {
+            document.getElementById("submitBtn").disabled = true; // Verrouiller le bouton
+          }
+        });
+
+      // Afficher les messages d'erreur en cas de champ invalide
+      document
+        .getElementById("inscriptionForm")
+        .addEventListener("invalid", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          var invalidField = e.target;
+          invalidField.classList.add("is-invalid");
+          invalidField.nextElementSibling.style.display = "block";
+        });
+    </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
